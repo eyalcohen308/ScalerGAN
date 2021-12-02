@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio samples from "ScalerGAN: Generative Adversarial Networks for Time-Scale modification of Speech"</title>
+    <meta charset="UTF-8">
+    <title>ScalerGAN: Generative Adversarial Networks for Time-Scale modification of Speech</title>
+    <style>
+        red {color: red}
+        audio {width: 250px}
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Audio samples from "ScalerGAN: Generative Adversarial Networks for Time-Scale modification of Speech"</h1>
+      </header>
+    </article>
+
+<!--    <p><b>Paper:</b> <a href="">arXiv</a></p>-->
+<!--    <p><b>Authors</b>: </p>-->
+
+    <div>
+      <b>Abstract:</b>
+         Time-scale modification (TSM) of speech is defined as speeding up or slowing down a given spoken utterance while keeping the voice attributes such as the pitch, speaker identity, and naturalness.
+         This task helps personalize speaking rate in listening applications, such as podcasts, language learning, and time-alignment of a speech corpus.
+         In this work we propose ScalerGAN, a new deep learning algorithm for TSM that can speed up or slow down speech signals at a given rate.
+        ScalerGAN will be trained only once on a complete corpus of spoken utterances.
+        Then, at inference time, it will be given an unseen speech signal and the desired rate (can be larger or smaller than 1),
+        and output a new adjusted speech while keeping the same voice properties.
+    <p></p>
+    </div>
+
+    <p>For more details of our work, please refer to the <a href="arxiv_link">paper</a>.<br/>
+    Our implementation is available in the <a href="github_link">github repository</a>.<br/><br/>
+    #TODO: add arxiv and github links
+    </p>
+
+
+    <p class="toc_title">Contents</p>
+    <div id="toc_container">
+    <ul>
+      <li><a href="#ss">Single Speaker (LJ Speech Dataset)</a></li>
+      <li><a href="#us">Unseen Speakers (VCTK Dataset)</a></li>
+    </ul>
+    </div>
+    <p>&nbsp;</p>
+    <div>
+      <a name="ss"><h2>Single Speaker (LJ Speech Dataset)</h2></a>
+      <hr>
+      <audio controls="" preload="none"><source src="samples/origin_files/LJ006-0034.wav"></audio>
+      <table>
+        <tbody>
+    <tr>
+      <td nowrap width="160">Algorithm</td>
+      <td nowrap width="160">&alpha;=0.5</td>
+      <td nowrap width="160">&alpha;=0.7</td>
+      <td nowrap width="160">&alpha;=0.9</td>
+      <td nowrap width="160">&alpha;=1.1</td>
+      <td nowrap width="160">&alpha;=1.3</td>
+      <td nowrap width="160">&alpha;=1.5</td>
+    </tr>
+    <tr>
+      <td nowrap width="160">ScalerGAN (ours)</td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>ESOLA
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ006-0034_ESOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ006-0034_ESOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ006-0034_ESOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ006-0034_ESOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ006-0034_ESOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ006-0034_ESOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>WSOLA
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ006-0034_WSOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ006-0034_WSOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ006-0034_WSOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ006-0034_WSOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ006-0034_WSOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ006-0034_WSOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>FESOLA
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ006-0034_FESOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ006-0034_FESOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ006-0034_FESOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ006-0034_FESOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ006-0034_FESOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ006-0034_FESOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>HPTSM
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ006-0034_HPTSM_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ006-0034_HPTSM_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ006-0034_HPTSM_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ006-0034_HPTSM_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ006-0034_HPTSM_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ006-0034_HPTSM_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>IPL
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ006-0034_PV_IPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ006-0034_PV_IPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ006-0034_PV_IPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ006-0034_PV_IPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ006-0034_PV_IPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ006-0034_PV_IPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>Phavorit_IPL
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ006-0034_Phavorit_Phavorit_IPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ006-0034_Phavorit_Phavorit_IPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ006-0034_Phavorit_Phavorit_IPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ006-0034_Phavorit_Phavorit_IPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ006-0034_Phavorit_Phavorit_IPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ006-0034_Phavorit_Phavorit_IPL_66.6667_per.wav"></audio></td>
+    <tr>
+      <td nowrap>Phavorit_SPL
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ006-0034_Phavorit_Phavorit_SPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ006-0034_Phavorit_Phavorit_SPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ006-0034_Phavorit_Phavorit_SPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ006-0034_Phavorit_Phavorit_SPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ006-0034_Phavorit_Phavorit_SPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ006-0034_Phavorit_Phavorit_SPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>PV
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ006-0034_PV_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ006-0034_PV_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ006-0034_PV_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ006-0034_PV_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ006-0034_PV_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ006-0034_PV_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>SPL
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ006-0034_PV_SPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ006-0034_PV_SPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ006-0034_PV_SPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ006-0034_PV_SPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ006-0034_PV_SPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ006-0034_PV_SPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>HuTVS
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ006-0034_uTVS_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ006-0034_uTVS_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ006-0034_uTVS_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ006-0034_uTVS_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ006-0034_uTVS_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ006-0034_uTVS_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>Elastique
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ006-0034_Elastique_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ006-0034_Elastique_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ006-0034_Elastique_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ006-0034_Elastique_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ006-0034_Elastique_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ006-0034_Elastique_66.6667_per.wav"></audio></td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+    <br><br>
+    <div>
+      <hr>
+      <audio controls="" preload="none"><source src="samples/origin_files/LJ024-0089.wav"></audio>
+      <table>
+        <tbody>
+    <tr>
+      <td nowrap width="160">Algorithm</td>
+      <td nowrap width="160">&alpha;=0.5</td>
+      <td nowrap width="160">&alpha;=0.7</td>
+      <td nowrap width="160">&alpha;=0.9</td>
+      <td nowrap width="160">&alpha;=1.1</td>
+      <td nowrap width="160">&alpha;=1.3</td>
+      <td nowrap width="160">&alpha;=1.5</td>
+    </tr>
+    <tr>
+      <td nowrap width="160">ScalerGAN (ours)</td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>ESOLA
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ024-0089_ESOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ024-0089_ESOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ024-0089_ESOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ024-0089_ESOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ024-0089_ESOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/LJ024-0089_ESOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>WSOLA
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ024-0089_WSOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ024-0089_WSOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ024-0089_WSOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ024-0089_WSOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ024-0089_WSOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/LJ024-0089_WSOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>FESOLA
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ024-0089_FESOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ024-0089_FESOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ024-0089_FESOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ024-0089_FESOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ024-0089_FESOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/LJ024-0089_FESOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>HPTSM
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ024-0089_HPTSM_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ024-0089_HPTSM_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ024-0089_HPTSM_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ024-0089_HPTSM_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ024-0089_HPTSM_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/LJ024-0089_HPTSM_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>IPL
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ024-0089_PV_IPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ024-0089_PV_IPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ024-0089_PV_IPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ024-0089_PV_IPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ024-0089_PV_IPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/LJ024-0089_PV_IPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>Phavorit_IPL
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ024-0089_Phavorit_Phavorit_IPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ024-0089_Phavorit_Phavorit_IPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ024-0089_Phavorit_Phavorit_IPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ024-0089_Phavorit_Phavorit_IPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ024-0089_Phavorit_Phavorit_IPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/LJ024-0089_Phavorit_Phavorit_IPL_66.6667_per.wav"></audio></td>
+    <tr>
+      <td nowrap>Phavorit_SPL
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ024-0089_Phavorit_Phavorit_SPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ024-0089_Phavorit_Phavorit_SPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ024-0089_Phavorit_Phavorit_SPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ024-0089_Phavorit_Phavorit_SPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ024-0089_Phavorit_Phavorit_SPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/LJ024-0089_Phavorit_Phavorit_SPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>PV
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ024-0089_PV_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ024-0089_PV_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ024-0089_PV_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ024-0089_PV_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ024-0089_PV_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/LJ024-0089_PV_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>SPL
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ024-0089_PV_SPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ024-0089_PV_SPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ024-0089_PV_SPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ024-0089_PV_SPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ024-0089_PV_SPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/LJ024-0089_PV_SPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>HuTVS
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ024-0089_uTVS_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ024-0089_uTVS_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ024-0089_uTVS_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ024-0089_uTVS_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ024-0089_uTVS_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/LJ024-0089_uTVS_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>Elastique
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ024-0089_Elastique_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ024-0089_Elastique_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ024-0089_Elastique_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ024-0089_Elastique_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ024-0089_Elastique_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/LJ024-0089_Elastique_66.6667_per.wav"></audio></td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+    <br><br>
+    <div>
+      <a name="us"><h2>Unseen Speakers (VCTK Dataset)</h2></a>
+      <hr>
+      <audio controls="" preload="none"><source src="samples/origin_files/p232_410.wav"></audio>
+      <table>
+        <tbody>
+    <tr>
+      <td nowrap width="160">Algorithm</td>
+      <td nowrap width="160">&alpha;=0.5</td>
+      <td nowrap width="160">&alpha;=0.7</td>
+      <td nowrap width="160">&alpha;=0.9</td>
+      <td nowrap width="160">&alpha;=1.1</td>
+      <td nowrap width="160">&alpha;=1.3</td>
+      <td nowrap width="160">&alpha;=1.5</td>
+    </tr>
+    <tr>
+      <td nowrap width="160">ScalerGAN (ours)</td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>ESOLA
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_410_ESOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_410_ESOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_410_ESOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_410_ESOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_410_ESOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_410_ESOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>WSOLA
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_410_WSOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_410_WSOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_410_WSOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_410_WSOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_410_WSOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_410_WSOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>FESOLA
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_410_FESOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_410_FESOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_410_FESOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_410_FESOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_410_FESOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_410_FESOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>HPTSM
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_410_HPTSM_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_410_HPTSM_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_410_HPTSM_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_410_HPTSM_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_410_HPTSM_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_410_HPTSM_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>IPL
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_410_PV_IPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_410_PV_IPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_410_PV_IPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_410_PV_IPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_410_PV_IPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_410_PV_IPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>Phavorit_IPL
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_410_Phavorit_Phavorit_IPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_410_Phavorit_Phavorit_IPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_410_Phavorit_Phavorit_IPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_410_Phavorit_Phavorit_IPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_410_Phavorit_Phavorit_IPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_410_Phavorit_Phavorit_IPL_66.6667_per.wav"></audio></td>
+    <tr>
+      <td nowrap>Phavorit_SPL
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_410_Phavorit_Phavorit_SPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_410_Phavorit_Phavorit_SPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_410_Phavorit_Phavorit_SPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_410_Phavorit_Phavorit_SPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_410_Phavorit_Phavorit_SPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_410_Phavorit_Phavorit_SPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>PV
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_410_PV_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_410_PV_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_410_PV_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_410_PV_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_410_PV_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_410_PV_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>SPL
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_410_PV_SPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_410_PV_SPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_410_PV_SPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_410_PV_SPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_410_PV_SPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_410_PV_SPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>HuTVS
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_410_uTVS_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_410_uTVS_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_410_uTVS_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_410_uTVS_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_410_uTVS_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_410_uTVS_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>Elastique
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_410_Elastique_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_410_Elastique_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_410_Elastique_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_410_Elastique_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_410_Elastique_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_410_Elastique_66.6667_per.wav"></audio></td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+    <br><br>
+    <div>
+      <hr>
+      <audio controls="" preload="none"><source src="samples/origin_files/p232_036.wav"></audio>
+      <table>
+        <tbody>
+    <tr>
+      <td nowrap width="160">Algorithm</td>
+      <td nowrap width="160">&alpha;=0.5</td>
+      <td nowrap width="160">&alpha;=0.7</td>
+      <td nowrap width="160">&alpha;=0.9</td>
+      <td nowrap width="160">&alpha;=1.1</td>
+      <td nowrap width="160">&alpha;=1.3</td>
+      <td nowrap width="160">&alpha;=1.5</td>
+    </tr>
+    <tr>
+      <td nowrap width="160">ScalerGAN (ours)</td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_036_ScalerGAN_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_036_ScalerGAN_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_036_ScalerGAN_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_036_ScalerGAN_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_036_ScalerGAN_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_036_ScalerGAN_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>ESOLA
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_036_ESOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_036_ESOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_036_ESOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_036_ESOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_036_ESOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/ESOLA/p232_036_ESOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>WSOLA
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_036_WSOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_036_WSOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_036_WSOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_036_WSOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_036_WSOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/WSOLA/p232_036_WSOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>FESOLA
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_036_FESOLA_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_036_FESOLA_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_036_FESOLA_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_036_FESOLA_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_036_FESOLA_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/FESOLA/p232_036_FESOLA_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>HPTSM
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_036_HPTSM_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_036_HPTSM_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_036_HPTSM_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_036_HPTSM_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_036_HPTSM_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/HPTSM/p232_036_HPTSM_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>IPL
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_036_PV_IPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_036_PV_IPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_036_PV_IPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_036_PV_IPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_036_PV_IPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/IPL/p232_036_PV_IPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>Phavorit_IPL
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_036_Phavorit_Phavorit_IPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_036_Phavorit_Phavorit_IPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_036_Phavorit_Phavorit_IPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_036_Phavorit_Phavorit_IPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_036_Phavorit_Phavorit_IPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_IPL/p232_036_Phavorit_Phavorit_IPL_66.6667_per.wav"></audio></td>
+    <tr>
+      <td nowrap>Phavorit_SPL
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_036_Phavorit_Phavorit_SPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_036_Phavorit_Phavorit_SPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_036_Phavorit_Phavorit_SPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_036_Phavorit_Phavorit_SPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_036_Phavorit_Phavorit_SPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Phavorit_SPL/p232_036_Phavorit_Phavorit_SPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>PV
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_036_PV_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_036_PV_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_036_PV_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_036_PV_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_036_PV_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/PV/p232_036_PV_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>SPL
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_036_PV_SPL_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_036_PV_SPL_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_036_PV_SPL_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_036_PV_SPL_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_036_PV_SPL_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/SPL/p232_036_PV_SPL_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>HuTVS
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_036_uTVS_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_036_uTVS_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_036_uTVS_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_036_uTVS_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_036_uTVS_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/uTVS/p232_036_uTVS_66.6667_per.wav"></audio></td>
+    </tr>
+    <tr>
+      <td nowrap>Elastique
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_036_Elastique_200_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_036_Elastique_142.857_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_036_Elastique_111.111_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_036_Elastique_90.9091_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_036_Elastique_76.9231_per.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="samples/Elastique/p232_036_Elastique_66.6667_per.wav"></audio></td>
+    </tr>
+        </tbody>
+      </table>
+      <hr>
+    </div>
+    <a name="rf"><h2>References</h2></a>
+    <p>Sample paged based on <a href="https://jik876.github.io/hifi-gan-demo/">HiFi-GAN</a>  page..<br/>
+    <div class="csl-bib-body">
+      <div data-csl-entry-id="damskagg2017audio" class="csl-entry">Damskägg, E.-P., &#38; Välimäki, V. (2017). Audio time stretching using fuzzy classification of spectral bins. <i>Applied Sciences</i>, <i>7</i>(12), 1293.</div>
+      <div data-csl-entry-id="DriedgerM14_TSM_DAFx" class="csl-entry">Driedger, J., &#38; Müller, M. (2014). TSM Toolbox: MATLAB Implementations of Time-Scale Modification Algorithms. <i>Proceedings of the International Conference on Digital Audio Effects (DAFx)</i>, 249–256.</div>
+      <div data-csl-entry-id="DriedgerME14_HPTSM_IEEE-SPL" class="csl-entry">Driedger, J., Müller, M., &#38; Ewert, S. (2014a). Improving Time-Scale Modification of Music Signals Using Harmonic-Percussive Separation. <i>IEEE Signal Processing Letters</i>, <i>21</i>(1), 105–109.</div>
+      <div data-csl-entry-id="6678724" class="csl-entry">Driedger, J., Müller, M., &#38; Ewert, S. (2014b). Improving Time-Scale Modification of Music Signals Using Harmonic-Percussive Separation. <i>IEEE Signal Processing Letters</i>, <i>21</i>(1), 105–109. https://doi.org/10.1109/LSP.2013.2294023</div>
+      <div data-csl-entry-id="Karrer2006PhaVoRITAP" class="csl-entry">Karrer, T., Lee, E., &#38; Borchers, J. O. (2006). PhaVoRIT: A Phase Vocoder for Real-Time Interactive Time-Stretching. <i>ICMC</i>.</div>
+      <div data-csl-entry-id="759041" class="csl-entry">Laroche, J., &#38; Dolson, M. (1999). Improved phase vocoder time-scale modification of audio. <i>IEEE Transactions on Speech and Audio Processing</i>, <i>7</i>(3), 323–332. https://doi.org/10.1109/89.759041</div>
+      <div data-csl-entry-id="1162810" class="csl-entry">Portnoff, M. (1976). Implementation of the digital phase vocoder using the fast Fourier transform. <i>IEEE Transactions on Acoustics, Speech, and Signal Processing</i>, <i>24</i>(3), 243–248. https://doi.org/10.1109/TASSP.1976.1162810</div>
+      <div data-csl-entry-id="8937258" class="csl-entry">Roberts, T., &#38; Paliwal, K. K. (2019). Time-Scale Modification Using Fuzzy Epoch-Synchronous Overlap-Add (FESOLA). <i>2019 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)</i>, 31–34. https://doi.org/10.1109/WASPAA.2019.8937258</div>
+      <div data-csl-entry-id="rudresh2018epochsynchronous" class="csl-entry">Rudresh, S., Vasisht, A., Vijayan, K., &#38; Seelamantula, C. S. (2018). <i>Epoch-Synchronous Overlap-Add (ESOLA) for Time- and Pitch-Scale Modification of Speech Signals</i>.</div>
+      <div data-csl-entry-id="8077073" class="csl-entry">Sharma, N., Potadar, S., Chetupalli, S. R., &#38; Sreenivas, T. V. (2017). Mel-scale sub-band modelling for perceptually improved time-scale modification of speech and audio signals. <i>2017 Twenty-Third National Conference on Communications (NCC)</i>, 1–5. https://doi.org/10.1109/NCC.2017.8077073</div>
+      <div data-csl-entry-id="319366" class="csl-entry">Verhelst, W., &#38; Roelands, M. (1993). An overlap-add technique based on waveform similarity (WSOLA) for high quality time-scale modification of speech. <i>1993 IEEE International Conference on Acoustics, Speech, and Signal Processing</i>, <i>2</i>, 554–557 vol.2. https://doi.org/10.1109/ICASSP.1993.319366</div>
+      <div data-csl-entry-id="WinNT" class="csl-entry"><i>Zplane Development. “Elastique time stretching &#38; pitch shifting sdks (version 3.2.5) [computer program]</i>. (n.d.). https://licensing.zplane.de/uploads/SDK/ELASTIQUE-PRO/V3/manual/elastique_pro_v3_sdk_documentation.pdf. https://licensing.zplane.de/uploads/SDK/ELASTIQUE-PRO/V3/manual/elastique_pro_v3_sdk_documentation.pdf</div>
+    </div>
+</div>
+    <p></p>
+    </div>
+    <br><br>
+  </body>
+</html>
