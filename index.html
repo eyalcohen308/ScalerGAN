@@ -1,67 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Audio samples from "ScalerGAN: Generative Adversarial Networks for Time-Scale modification of Speech"</title>
-    <meta charset="UTF-8">
-    <title>ScalerGAN: Generative Adversarial Networks for Time-Scale modification of Speech</title>
-    <style>
-        red {color: red}
-        audio {width: 250px}
-    </style>
-  </head>
-  <body>
-    <article>
-      <header>
-        <h1>Audio samples from "ScalerGAN: Generative Adversarial Networks for Time-Scale modification of Speech"</h1>
-      </header>
-    </article>
-
-<!--    <p><b>Paper:</b> <a href="">arXiv</a></p>-->
-<!--    <p><b>Authors</b>: </p>-->
-
-    <div>
-      <b>Abstract:</b>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ScalerGAN: Generative Adversarial Networks for Time-Scale modification of Speech</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="jquery-3.5.js"></script>
+    </head>
+    <body>
+<div class="container">
+    <div id="text1">ScalerGAN: Generative Adversarial Networks for </br> Time-Scale modification of Speech</div>
+    <div id="intro">
+        <br>
+        <p>
+            Eyal Cohen, Felix Kreuk, Joseph Keshet
+      </p>
+       <p>
+            [<a href="">Paper</a>]
+        </p>
+       <p>
+            [<a href="">Github</a>]
+        </p>
+    </div>
+</div>
+<div class="content-container">
+    <img src="ScalerGAN_arcitecture.png" style="width:70%">
+    <br>
+    <p>
          Time-scale modification (TSM) of speech is defined as speeding up or slowing down a given spoken utterance while keeping the voice attributes such as the pitch, speaker identity, and naturalness.
          This task helps personalize speaking rate in listening applications, such as podcasts, language learning, and time-alignment of a speech corpus.
          In this work we propose ScalerGAN, a new deep learning algorithm for TSM that can speed up or slow down speech signals at a given rate.
         ScalerGAN will be trained only once on a complete corpus of spoken utterances.
         Then, at inference time, it will be given an unseen speech signal and the desired rate (can be larger or smaller than 1),
         and output a new adjusted speech while keeping the same voice properties.
-    <p></p>
-    </div>
-
-    <p>For more details of our work, please refer to the <a href="arxiv_link">paper</a>.<br/>
-    Our implementation is available in the <a href="github_link">github repository</a>.<br/><br/>
-    #TODO: add arxiv and github links
     </p>
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-
-    <p class="toc_title">Contents</p>
-    <div id="toc_container">
-    <ul>
-      <li><a href="#ss">Single Speaker (LJ Speech Dataset)</a></li>
-      <li><a href="#us">Unseen Speakers (VCTK Dataset)</a></li>
-    </ul>
-    </div>
-    <p>&nbsp;</p>
-    <div>
-      <a name="ss"><h2>Single Speaker (LJ Speech Dataset)</h2></a>
-      <hr>
-      <audio controls="" preload="none"><source src="samples/origin_files/LJ006-0034.wav"></audio>
-      <table>
-        <tbody>
+<div class="content-container">
+    <script src="wavesurfer.js"></script>
+    <div class="content-title">Single Speaker (LJ Speech Dataset)</div>
+    <br>
+    <h3>Original Audio </h3>
+    <audio display:inline-block; title="LJ006-0034" controls="" preload="none"><source src="samples/origin_files/LJ006-0034.wav"></audio>
+    <br><br>
+    <table border="0" class="inlineTable">
+   <tbody>
     <tr>
-      <td nowrap width="160">Algorithm</td>
-      <td nowrap width="160">&alpha;=0.5</td>
-      <td nowrap width="160">&alpha;=0.7</td>
-      <td nowrap width="160">&alpha;=0.9</td>
-      <td nowrap width="160">&alpha;=1.1</td>
-      <td nowrap width="160">&alpha;=1.3</td>
-      <td nowrap width="160">&alpha;=1.5</td>
+      <td nowrap width="80">Algorithm</td>
+      <td nowrap width="80">&alpha;=0.5</td>
+      <td nowrap width="80">&alpha;=0.7</td>
+      <td nowrap width="80">&alpha;=0.9</td>
+      <td nowrap width="80">&alpha;=1.1</td>
+      <td nowrap width="80">&alpha;=1.3</td>
+      <td nowrap width="80">&alpha;=1.5</td>
     </tr>
     <tr>
-      <td nowrap width="160">ScalerGAN (ours)</td>
+      <td nowrap width="80">ScalerGAN (ours)</td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_200_per.wav"></audio></td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_142.857_per.wav"></audio></td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ006-0034_ScalerGAN_111.111_per.wav"></audio></td>
@@ -169,24 +163,24 @@
     </tr>
         </tbody>
       </table>
-    </div>
-    <br><br>
-    <div>
       <hr>
-      <audio controls="" preload="none"><source src="samples/origin_files/LJ024-0089.wav"></audio>
+      <br>
+    <h3>Original Audio </h3>
+    <audio display:inline-block; title="LJ006-0034" controls="" preload="none"><source src="samples/origin_files/LJ024-0089.wav"></audio>
+    <br><br>
       <table>
         <tbody>
     <tr>
-      <td nowrap width="160">Algorithm</td>
-      <td nowrap width="160">&alpha;=0.5</td>
-      <td nowrap width="160">&alpha;=0.7</td>
-      <td nowrap width="160">&alpha;=0.9</td>
-      <td nowrap width="160">&alpha;=1.1</td>
-      <td nowrap width="160">&alpha;=1.3</td>
-      <td nowrap width="160">&alpha;=1.5</td>
+      <td nowrap width="80">Algorithm</td>
+      <td nowrap width="80">&alpha;=0.5</td>
+      <td nowrap width="80">&alpha;=0.7</td>
+      <td nowrap width="80">&alpha;=0.9</td>
+      <td nowrap width="80">&alpha;=1.1</td>
+      <td nowrap width="80">&alpha;=1.3</td>
+      <td nowrap width="80">&alpha;=1.5</td>
     </tr>
     <tr>
-      <td nowrap width="160">ScalerGAN (ours)</td>
+      <td nowrap width="80">ScalerGAN (ours)</td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_200_per.wav"></audio></td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_142.857_per.wav"></audio></td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/LJ024-0089_ScalerGAN_111.111_per.wav"></audio></td>
@@ -294,25 +288,24 @@
     </tr>
         </tbody>
       </table>
-    </div>
-    <br><br>
-    <div>
-      <a name="us"><h2>Unseen Speakers (VCTK Dataset)</h2></a>
       <hr>
-      <audio controls="" preload="none"><source src="samples/origin_files/p232_410.wav"></audio>
+    <br>
+      <div class="content-title">Unseen Speakers (VCTK Dataset)</div>
+    <h3>Original Audio </h3>
+    <audio display:inline-block; title="LJ006-0034" controls="" preload="none"><source src="samples/origin_files/p232_410.wav"></audio>
       <table>
         <tbody>
     <tr>
-      <td nowrap width="160">Algorithm</td>
-      <td nowrap width="160">&alpha;=0.5</td>
-      <td nowrap width="160">&alpha;=0.7</td>
-      <td nowrap width="160">&alpha;=0.9</td>
-      <td nowrap width="160">&alpha;=1.1</td>
-      <td nowrap width="160">&alpha;=1.3</td>
-      <td nowrap width="160">&alpha;=1.5</td>
+      <td nowrap width="80">Algorithm</td>
+      <td nowrap width="80">&alpha;=0.5</td>
+      <td nowrap width="80">&alpha;=0.7</td>
+      <td nowrap width="80">&alpha;=0.9</td>
+      <td nowrap width="80">&alpha;=1.1</td>
+      <td nowrap width="80">&alpha;=1.3</td>
+      <td nowrap width="80">&alpha;=1.5</td>
     </tr>
     <tr>
-      <td nowrap width="160">ScalerGAN (ours)</td>
+      <td nowrap width="">ScalerGAN (ours)</td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_200_per.wav"></audio></td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_142.857_per.wav"></audio></td>
       <td><audio controls="" preload="none"><source src="samples/ScalerGAN/p232_410_ScalerGAN_111.111_per.wav"></audio></td>
@@ -419,12 +412,11 @@
       <td><audio controls="" preload="none"><source src="samples/Elastique/p232_410_Elastique_66.6667_per.wav"></audio></td>
     </tr>
         </tbody>
-      </table>
-    </div>
-    <br><br>
-    <div>
-      <hr>
-      <audio controls="" preload="none"><source src="samples/origin_files/p232_036.wav"></audio>
+    </table>
+    <hr>
+    <br>
+    <h3>Original Audio </h3>
+    <audio display:inline-block; title="LJ006-0034" controls="" preload="none"><source src="samples/origin_files/p232_036.wav"></audio>
       <table>
         <tbody>
     <tr>
@@ -545,27 +537,25 @@
     </tr>
         </tbody>
       </table>
-      <hr>
-    </div>
-    <a name="rf"><h2>References</h2></a>
-    <p>Sample paged based on <a href="https://jik876.github.io/hifi-gan-demo/">HiFi-GAN</a>  page..<br/>
-    <div class="csl-bib-body">
-      <div data-csl-entry-id="damskagg2017audio" class="csl-entry">Damskägg, E.-P., &#38; Välimäki, V. (2017). Audio time stretching using fuzzy classification of spectral bins. <i>Applied Sciences</i>, <i>7</i>(12), 1293.</div>
-      <div data-csl-entry-id="DriedgerM14_TSM_DAFx" class="csl-entry">Driedger, J., &#38; Müller, M. (2014). TSM Toolbox: MATLAB Implementations of Time-Scale Modification Algorithms. <i>Proceedings of the International Conference on Digital Audio Effects (DAFx)</i>, 249–256.</div>
-      <div data-csl-entry-id="DriedgerME14_HPTSM_IEEE-SPL" class="csl-entry">Driedger, J., Müller, M., &#38; Ewert, S. (2014a). Improving Time-Scale Modification of Music Signals Using Harmonic-Percussive Separation. <i>IEEE Signal Processing Letters</i>, <i>21</i>(1), 105–109.</div>
-      <div data-csl-entry-id="6678724" class="csl-entry">Driedger, J., Müller, M., &#38; Ewert, S. (2014b). Improving Time-Scale Modification of Music Signals Using Harmonic-Percussive Separation. <i>IEEE Signal Processing Letters</i>, <i>21</i>(1), 105–109. https://doi.org/10.1109/LSP.2013.2294023</div>
-      <div data-csl-entry-id="Karrer2006PhaVoRITAP" class="csl-entry">Karrer, T., Lee, E., &#38; Borchers, J. O. (2006). PhaVoRIT: A Phase Vocoder for Real-Time Interactive Time-Stretching. <i>ICMC</i>.</div>
-      <div data-csl-entry-id="759041" class="csl-entry">Laroche, J., &#38; Dolson, M. (1999). Improved phase vocoder time-scale modification of audio. <i>IEEE Transactions on Speech and Audio Processing</i>, <i>7</i>(3), 323–332. https://doi.org/10.1109/89.759041</div>
-      <div data-csl-entry-id="1162810" class="csl-entry">Portnoff, M. (1976). Implementation of the digital phase vocoder using the fast Fourier transform. <i>IEEE Transactions on Acoustics, Speech, and Signal Processing</i>, <i>24</i>(3), 243–248. https://doi.org/10.1109/TASSP.1976.1162810</div>
-      <div data-csl-entry-id="8937258" class="csl-entry">Roberts, T., &#38; Paliwal, K. K. (2019). Time-Scale Modification Using Fuzzy Epoch-Synchronous Overlap-Add (FESOLA). <i>2019 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)</i>, 31–34. https://doi.org/10.1109/WASPAA.2019.8937258</div>
-      <div data-csl-entry-id="rudresh2018epochsynchronous" class="csl-entry">Rudresh, S., Vasisht, A., Vijayan, K., &#38; Seelamantula, C. S. (2018). <i>Epoch-Synchronous Overlap-Add (ESOLA) for Time- and Pitch-Scale Modification of Speech Signals</i>.</div>
-      <div data-csl-entry-id="8077073" class="csl-entry">Sharma, N., Potadar, S., Chetupalli, S. R., &#38; Sreenivas, T. V. (2017). Mel-scale sub-band modelling for perceptually improved time-scale modification of speech and audio signals. <i>2017 Twenty-Third National Conference on Communications (NCC)</i>, 1–5. https://doi.org/10.1109/NCC.2017.8077073</div>
-      <div data-csl-entry-id="319366" class="csl-entry">Verhelst, W., &#38; Roelands, M. (1993). An overlap-add technique based on waveform similarity (WSOLA) for high quality time-scale modification of speech. <i>1993 IEEE International Conference on Acoustics, Speech, and Signal Processing</i>, <i>2</i>, 554–557 vol.2. https://doi.org/10.1109/ICASSP.1993.319366</div>
-      <div data-csl-entry-id="WinNT" class="csl-entry"><i>Zplane Development. “Elastique time stretching &#38; pitch shifting sdks (version 3.2.5) [computer program]</i>. (n.d.). https://licensing.zplane.de/uploads/SDK/ELASTIQUE-PRO/V3/manual/elastique_pro_v3_sdk_documentation.pdf. https://licensing.zplane.de/uploads/SDK/ELASTIQUE-PRO/V3/manual/elastique_pro_v3_sdk_documentation.pdf</div>
-    </div>
+    </br></br>
 </div>
-    <p></p>
-    </div>
-    <br><br>
-  </body>
+
+<div class="content-container">
+    <div class="content-title">REFERENCES</div>
+    Sample paged based on <a style="color:rgb(22, 38, 67)"  href="https://daps.cs.princeton.edu/projects/HiFi-GAN/index.php"> HiFi-GAN</a> page.
+    <div data-csl-entry-id="damskagg2017audio" class="csl-entry">Damskägg, E.-P., &#38; Välimäki, V. (2017). Audio time stretching using fuzzy classification of spectral bins. <i>Applied Sciences</i>, <i>7</i>(12), 1293.</div>
+  <div data-csl-entry-id="DriedgerM14_TSM_DAFx" class="csl-entry">Driedger, J., &#38; Müller, M. (2014). TSM Toolbox: MATLAB Implementations of Time-Scale Modification Algorithms. <i>Proceedings of the International Conference on Digital Audio Effects (DAFx)</i>, 249–256.</div>
+  <div data-csl-entry-id="DriedgerME14_HPTSM_IEEE-SPL" class="csl-entry">Driedger, J., Müller, M., &#38; Ewert, S. (2014a). Improving Time-Scale Modification of Music Signals Using Harmonic-Percussive Separation. <i>IEEE Signal Processing Letters</i>, <i>21</i>(1), 105–109.</div>
+  <div data-csl-entry-id="6678724" class="csl-entry">Driedger, J., Müller, M., &#38; Ewert, S. (2014b). Improving Time-Scale Modification of Music Signals Using Harmonic-Percussive Separation. <i>IEEE Signal Processing Letters</i>, <i>21</i>(1), 105–109. https://doi.org/10.1109/LSP.2013.2294023</div>
+  <div data-csl-entry-id="Karrer2006PhaVoRITAP" class="csl-entry">Karrer, T., Lee, E., &#38; Borchers, J. O. (2006). PhaVoRIT: A Phase Vocoder for Real-Time Interactive Time-Stretching. <i>ICMC</i>.</div>
+  <div data-csl-entry-id="759041" class="csl-entry">Laroche, J., &#38; Dolson, M. (1999). Improved phase vocoder time-scale modification of audio. <i>IEEE Transactions on Speech and Audio Processing</i>, <i>7</i>(3), 323–332. https://doi.org/10.1109/89.759041</div>
+  <div data-csl-entry-id="1162810" class="csl-entry">Portnoff, M. (1976). Implementation of the digital phase vocoder using the fast Fourier transform. <i>IEEE Transactions on Acoustics, Speech, and Signal Processing</i>, <i>24</i>(3), 243–248. https://doi.org/10.1109/TASSP.1976.1162810</div>
+  <div data-csl-entry-id="8937258" class="csl-entry">Roberts, T., &#38; Paliwal, K. K. (2019). Time-Scale Modification Using Fuzzy Epoch-Synchronous Overlap-Add (FESOLA). <i>2019 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)</i>, 31–34. https://doi.org/10.1109/WASPAA.2019.8937258</div>
+  <div data-csl-entry-id="rudresh2018epochsynchronous" class="csl-entry">Rudresh, S., Vasisht, A., Vijayan, K., &#38; Seelamantula, C. S. (2018). <i>Epoch-Synchronous Overlap-Add (ESOLA) for Time- and Pitch-Scale Modification of Speech Signals</i>.</div>
+  <div data-csl-entry-id="8077073" class="csl-entry">Sharma, N., Potadar, S., Chetupalli, S. R., &#38; Sreenivas, T. V. (2017). Mel-scale sub-band modelling for perceptually improved time-scale modification of speech and audio signals. <i>2017 Twenty-Third National Conference on Communications (NCC)</i>, 1–5. https://doi.org/10.1109/NCC.2017.8077073</div>
+  <div data-csl-entry-id="319366" class="csl-entry">Verhelst, W., &#38; Roelands, M. (1993). An overlap-add technique based on waveform similarity (WSOLA) for high quality time-scale modification of speech. <i>1993 IEEE International Conference on Acoustics, Speech, and Signal Processing</i>, <i>2</i>, 554–557 vol.2. https://doi.org/10.1109/ICASSP.1993.319366</div>
+  <div data-csl-entry-id="WinNT" class="csl-entry"><i>Zplane Development. “Elastique time stretching &#38; pitch shifting sdks (version 3.2.5) [computer program]</i>. (n.d.). https://licensing.zplane.de/uploads/SDK/ELASTIQUE-PRO/V3/manual/elastique_pro_v3_sdk_documentation.pdf. https://licensing.zplane.de/uploads/SDK/ELASTIQUE-PRO/V3/manual/elastique_pro_v3_sdk_documentation.pdf</div>
+
+</div>
+</body>
 </html>
