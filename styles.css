@@ -388,4 +388,4 @@ a.btn.disabled, fieldset:disabled a.btn {
 .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem rgba(22, 38, 67, .5)
 }
-audio { width: 250px; display: block; }
+audio { width: 150px; display: block; }
