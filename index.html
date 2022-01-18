@@ -23,16 +23,11 @@
     </div>
 </div>
 <div class="content-container">
-    <img src="ScalerGAN_arcitecture.png" style="width:70%">
+    <img src="ScalerGAN_therealthing.png" style="width:70%">
     <br>
     <p>
-         Time-scale modification (TSM) of speech is defined as speeding up or slowing down a given spoken utterance while keeping the voice attributes such as the pitch, speaker identity, and naturalness.
-         This task helps personalize speaking rate in listening applications, such as podcasts, language learning, and time-alignment of a speech corpus.
-         In this work we propose ScalerGAN, a new deep learning algorithm for TSM that can speed up or slow down speech signals at a given rate.
-        ScalerGAN will be trained only once on a complete corpus of spoken utterances.
-        Then, at inference time, it will be given an unseen speech signal and the desired rate (can be larger or smaller than 1),
-        and output a new adjusted speech while keeping the same voice properties.
-    </p>
+Listening to spoken content often requires modifying the speech rate while preserving the timbre and pitch of the speaker. To date, advanced signal processing techniques are used to address this task, but it still remains a challenge to maintain a high speech quality at all time-scales. Inspired by the success of speech generation using Generative Adversarial Networks (GANs), we propose a novel unsupervised learning algorithm for time-scale modification (TSM) of speech, called ScalerGAN. The model is trained using a set of speech utterances, where no time-scales are provided. The ScalerGAN algorithm is composed of a generator that gets as input speech with the desired rate and outputs a time-adjusted speech; a discriminator that works on various spectrum scales; and a decoder that converts the time-adjusted signal back to the original rate to maintain consistency. Using an A/B test and conditional A/B test, human listeners were asked to compare ScalerGAN with other state-of-the-art TSM methods. The results showed that the speech quality of ScalerGAN outperforms all other methods.
+   </p>
 </div>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
